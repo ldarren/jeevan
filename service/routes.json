@@ -1,0 +1,11 @@
+{
+	"routes": {
+		"/1/ping": [
+			[["web.output", "text/plain", "text"], "_.res", "pong"]
+		],
+		"/1/hooks": [
+			["util.handleOption", "_.req", "_.res"],
+			[["web.output", "text/plain", "text"], "_.res", "hello"]
+		]
+	}
+}
